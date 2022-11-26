@@ -1,9 +1,41 @@
 <!doctype html>
 <html>
 <head>
-  <title></title>
+  <title>Meihne Website</title>
 </head>  
     <body>
+      .wrapper {
+        position:relative;
+      }
       
-     </body>    
- </html>
+      .wrapper::after {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-image: url(https://previews.123rf.com/images/siberian64/siberian641710/siberian64171000004/87656841-see-hovsgol-nord%C3%B6stliche-k%C3%BCste-an-einem-sonnigen-sommertag-mongolei-bildseitenverh%C3%A4ltnis-16-9.jpg), url(https://cdnsio.nicko-cruises.de/image/resize/2000x-/0ebd159c-bff8-4bc9-b2a8-29ed645c395f/italien-amalfikueste-istock-1158754142.jpeg);
+        background-position: top left, top right;
+        background-repeat: repeat-y;
+      }
+      
+      .box1 {
+        padding: 50px;
+        padding-left: 100px;
+        background: #f6f7f9;
+      }
+      
+      .box2 {
+        padding: 50px;
+        padding-left: 100px;
+        background: #e89d8c;
+      }
+      /* to make the content always on the top */
+      .box1 *,
+      .box2 * {
+        position:relative;
+        z-index:2;
+      }
+        </body>    
+  </html>
