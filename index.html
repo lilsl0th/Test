@@ -2,55 +2,18 @@
 <html>
 <head>
   <title>Meihne Website</title>
-   <link rel="stylesheet" type="text/css" href="test.css">
+  <link rel="stylesheet" href="style.css">
 </head>  
     <body>
-      .wrapper {
-  position:relative;
-}
-
-.wrapper::after {
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-image: url(https://i.ibb.co/gD7vNSs/fleur-cerf.png), url(https://i.ibb.co/Nn2Wt9Q/fleur-renard.png);
-  background-position: top left, top right;
-  background-repeat: repeat-y;
-}
-
-.box1 {
-  padding: 50px;
-  padding-left: 100px;
-  background: #f6f7f9;
-}
-
-.box2 {
-  padding: 50px;
-  padding-left: 100px;
-  background: #e89d8c;
-}
-/* to make the content always on the top */
-.box1 *,
-.box2 * {
-  position:relative;
-  z-index:2;
-}
-      <div class="wrapper">
-  <div class="box1">
-    <h1>This is a heading</h1>
-    <p>
-      This is paragraph
-    </p>
-  </div>
-  <div class="box2">
-    <h1>This is a heading</h1>
-    <p>
-      This is paragraph
-    </p>
-  </div>
-</div>
+    <h1 class="caution"> BREAKING NEWS!!! </h1>
+    .caution {
+      border: solid 10px red;
+      p {
+        border-radius: 10px;
+        background-color: lightBlue;
+        border: solid;
+       }
+       .title {
+        border: solid 10px;
         </body>    
   </html>
